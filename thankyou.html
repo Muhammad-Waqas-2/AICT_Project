@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Booking!</title>
+    <link rel="stylesheet" href="thankyou.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Booking!</h1>
+        <p>Your adventure awaits!</p>
+    </header>
+
+    <div class="container">
+        <h2>Booking Confirmation</h2>
+        <p>We are excited to confirm your booking for the K2 Summit Trek!</p>
+        <div class="booking-details">
+            <p><strong>Name:</strong> <span id="user-name"></span></p>
+            <p><strong>Email:</strong> <span id="user-email"></span></p>
+            <p><strong>Departure Date:</strong> <span id="departure-date"></span></p>
+            <p><strong>Check-out Date:</strong> <span id="checkout-date"></span></p>
+            <p><strong>Number of Guests:</strong> <span id="guest-count"></span></p>
+        </div>
+        <p>We look forward to seeing you on your adventure!</p>
+        <button onclick="goBack()">Go Back to Home</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Adventure Tours. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Retrieve values from local storage
+        document.getElementById("user-name").innerText = localStorage.getItem('name');
+        document.getElementById("user-email").innerText = localStorage.getItem('email');
+        document.getElementById("departure-date").innerText = localStorage.getItem('departureDate');
+        document.getElementById("checkout-date").innerText = localStorage.getItem('checkoutDate');
+        document.getElementById("guest-count").innerText = localStorage.getItem('guests');
+
+        function goBack() {
+            window.location.href = "index.html"; // Redirect to the home page
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background:linear-gradient(to right, rgba(30, 43, 81, 0.8), rgba(31, 62, 85, 0.8)), url('thankyou.jpg') no-repeat center center fixed; /* Add your background image */
+    background-size: cover; /* Cover the entire background */
+    margin: 0;
+    padding: 0;
+    color: #130c0c; /* White text for better contrast */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px; /* Increased padding for a more spacious look */
+    box-shadow: 0 4px 20px rgb(253, 252, 252);
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Slide in from above */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 4em; /* Larger font size */
+    margin: 0;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    font-size: 1.5em;
+}
+
+/* Container Styles */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h2 {
+    color: #0a080d; /* Use a vibrant color */
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Larger subheading */
+}
+
+.booking-details {
+    background: #f8f7f5; /* Soft background for details */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+button {
+    margin-top: 20px;
+    padding: 12px 25px; /* Increased padding for a more substantial button */
+    background: #216c1a; /* A vibrant coral color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em; /* Larger font size */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease; /* Added transform transition */
+}
+
+button:hover {
+    background: #f5f3f2; /* Darker coral on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Footer Styles */
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in;
+}
